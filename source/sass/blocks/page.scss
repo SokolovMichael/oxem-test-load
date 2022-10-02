@@ -1,0 +1,44 @@
+.page {
+  font-family: "Nekst-Black", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $base-dark-color;
+  min-width: $mobile-width-only;
+  height: 100%;
+
+  @media (min-width: $mobile-width-only) {
+    overflow-x: hidden;
+  }
+}
+
+.page__body {
+  height: 100%;
+  margin: 0;
+
+  @media (min-width: $mobile-width-only) {
+    overflow-x: hidden;
+  }
+}
+
+.page__wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 44px 20px 64px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 36px 156px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 102px 48px 120px;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    padding: 215px 47px 213px;
+    width: 1440px;
+    margin: 0 auto;
+  }
+}

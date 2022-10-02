@@ -1,0 +1,38 @@
+button {
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  display: block;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="tel"],
+input[type="submit"] {
+  border-radius: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

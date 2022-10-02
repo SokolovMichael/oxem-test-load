@@ -1,0 +1,99 @@
+.total {
+  display: flex;
+  flex-direction: column;
+  color: $dark-color-type-3;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 38px;
+    margin-bottom: 0;
+  }
+}
+
+.total__item {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-right: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 180px;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.total__item:last-child {
+  margin: 0;
+}
+
+.total__item-name {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 3px;
+  }
+}
+
+.total__text {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $desktop-max-width) {
+    width: 300px;
+  }
+}
+
+.total__input {
+  color: $dark-color-type-3;
+  font-family: "Nekst-Black", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  width: 108px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 49px;
+    width: 100%;
+  }
+}
+
+.total__input,
+.total__item-text {
+  font-weight: 900;
+}
+
+.total__item-text {
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 49px;
+    margin-bottom: 10px;
+  }
+}
+
+.total__input--monthly-payment {
+  width: 80px;
+}

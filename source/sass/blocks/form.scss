@@ -1,0 +1,88 @@
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 50px;
+  min-width: 0;
+}
+
+.form__wrapper {
+  @media (min-width: $desktop-max-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+  }
+}
+
+.form__wrapper button {
+  background: $background-color-type-4;
+  cursor: pointer;
+  border-radius: 40px;
+  font-family: "Nekst-Black", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 900;
+  color: $base-light-color;
+  padding: 18px 18px 22px;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  position: relative;
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 68px;
+    font-size: 30px;
+    line-height: 36px;
+    width: 345px;
+    padding: 16px;
+  }
+
+  @media (min-width: $desktop-max-width) {
+    width: auto;
+    padding: 0;
+    margin: 10px 0 14px 7px;
+  }
+}
+
+.form__wrapper button:hover {
+  background: $dark-color-type-2;
+}
+
+.form__wrapper button:active {
+  background: $dark-color-type-4;
+}
+
+.form__wrapper button:disabled {
+  pointer-events: none;
+}
+
+.form__text--loading {
+  display: none;
+}
+
+.form__load {
+  display: none;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 2px solid $base-light-color;
+  border-top-color: $background-color-type-6;
+  animation: Rotate 0.5s linear infinite;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+@keyframes Rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+}
+
+.form__load--loading {
+  display: block;
+}

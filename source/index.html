@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Oxem. Тестовое задание</title>
+    <link rel="preload" href="fonts/nekstblack.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/gilroyregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="description" content="Покупай автомобиль по лучшим ценам.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body class="page__body">
+    <div class="page__wrapper">
+      <main class="page__main calculation">
+        <h1>Рассчитайте стоимость автомобиля в&nbsp;лизинг</h1>
+        <form class="calculation__form form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Расчет стоимости</legend>
+            <ul class="form__list sum">
+              <li class="sum__item">
+                <label class="sum__label">
+                  <span class="sum__item-name sum__item-name--mobile">Желаемая сумма кредита</span>
+                  <span class="sum__item-name sum__item-name--main">Стоимость автомобиля</span>
+                  <span class="sum__input-wrapper">
+                    <span class="sum__text">
+                      <input class="sum__input sum__input--price" type="number" name="price" placeholder="Укажите стоимость автомобиля от 1 млн.руб. до 6 млн.руб." min="1000000" max="6000000" required>
+                      <span class="sum__item-text sum__item-text--rouble">₽</span>
+                    </span>
+                    <span class="sum__item-slider sum__item-slider--price"></span>
+                  </span>
+                </label>
+              </li>
+              <li class="sum__item">
+                <div class="sum__label">
+                  <h2 class="sum__item-name">Первоначальный взнос</h2>
+                  <div class="sum__input-wrapper sum__input-wrapper--an-initial-fee">
+                    <div class="sum__text-wrapper">
+                      <div class="sum__text sum__text--an-initial-fee-rubles">
+                        <input class="sum__input sum__input--an-initial-fee-rubles" name="an-initial-fee-rubles" readonly>
+                        <span class="sum__item-text sum__item-text--rouble">₽</span>
+                      </div>
+                      <div class="sum__text sum__text--an-initial-fee-percent">
+                        <input class="sum__input sum__input--an-initial-fee-percent" type="number" name="an-initial-fee-percent" min="10" max="60" required>
+                        <span class="sum__item-text sum__item-text--percent">%</span>
+                      </div>
+                    </div>
+                    <div class="sum__item-slider sum__item-slider--an-initial-fee"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="sum__item">
+                <label class="sum__label">
+                  <span class="sum__item-name">Срок лизинга</span>
+                  <span class="sum__input-wrapper">
+                    <span class="sum__text">
+                      <input class="sum__input sum__input--leasing-term" type="number" name="leasing-term" placeholder="От 1 до 60 месяцев" min="1" max="60" required>
+                      <span class="sum__item-text">мес.</span>
+                    </span>
+                    <span class="sum__item-slider sum__item-slider--leasing-term"></span>
+                  </span>
+                </label>
+              </li>
+            </ul>
+            <div class="form__wrapper">
+              <ul class="form__list total">
+                <li class="total__item">
+                  <h2 class="total__item-name">Сумма договора лизинга</h2>
+                  <div class="total__text">
+                    <input class="total__input total__input--lease-agreement" name="lease-agreement" readonly>
+                    <span class="total__item-text">₽</span>
+                  </div>
+                </li>
+                <li class="total__item">
+                  <h2 class="total__item-name">Ежемесячный платеж от</h2>
+                  <div class="total__text">
+                    <input class="total__input total__input--monthly-payment" name="monthly-payment" readonly>
+                    <span class="total__item-text">₽</span>
+                  </div>
+                </li>
+              </ul>
+              <button type="submit">
+                <span class="form__text">Оставить заявку</span>
+                <span class="form__load"></span>
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </main>
+    </div>
+    <script src="js/main.min.js" type="module"></script>
+  </body>
+</html>
